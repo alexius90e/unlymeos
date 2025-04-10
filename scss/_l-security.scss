@@ -1,12 +1,12 @@
 .security {
-  margin: 160px 0;
+  margin: 160px 0 0;
 
   @include laptop {
-    margin: 80px 0;
+    margin: 80px 0 0;
   }
 
   @include mobile {
-    margin: 60px 0;
+    margin: 60px 0 0;
   }
 
   &__title {
@@ -25,6 +25,127 @@
     @include mobile {
       margin-bottom: 28px;
       font-size: 28px;
+    }
+  }
+
+  &__advantages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 10px;
+
+    &-card {
+      flex: 0 0 calc(100% / 4 - 10px / 4 * 3);
+      padding: 60px;
+      box-sizing: border-box;
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      border-radius: 32px;
+      backdrop-filter: blur(44px);
+      box-shadow: 0 30px 130px -50px rgba(0, 0, 0, 0.15);
+      background: #fff;
+
+      @include desktop {
+        flex: 0 0 calc(50% - 10px / 2);
+      }
+
+      @include laptop {
+        padding: 40px;
+      }
+
+      @include mobile {
+        flex: 1 1 100%;
+        padding: 28px;
+      }
+
+      &-icon {
+        margin: 0;
+
+        &-image {
+          display: block;
+          max-width: 100%;
+          height: auto;
+        }
+      }
+
+      &-title {
+        margin: 72px 0 40px;
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 143%;
+        color: #000;
+
+        @include laptop {
+          margin: 40px 0 24px;
+        }
+
+        @include mobile {
+          margin: 28px 0 18px;
+          font-size: 18px;
+        }
+      }
+
+      &-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #333;
+
+        @include mobile {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  &__singup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 120px 0 32px;
+
+    @include laptop {
+      margin: 80px 0 20px;
+    }
+
+    &-button {
+      display: inline-block;
+      padding: 36px 44px;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 125%;
+      color: #fff;
+      border: none;
+      border-radius: 24px;
+      box-shadow: 0 20px 40px -20px rgba(95, 15, 68, 0.45);
+      background: $buttonBg;
+      transition-property: box-shadow, filter;
+      transition-timing-function: ease-out;
+      transition-duration: 0.2s;
+      cursor: pointer;
+
+      @include laptop {
+        padding: 26px 40px;
+        font-size: 20px;
+      }
+
+      &:hover {
+        filter: brightness(120%);
+      }
+
+      & b {
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__disclaimer {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    text-align: center;
+    color: #808080;
+
+    @include laptop {
+      font-size: 14px;
     }
   }
 }
