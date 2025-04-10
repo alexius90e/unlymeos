@@ -1,2 +1,199 @@
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 60px 0 0;
+
+  @include laptop {
+    padding-top: 40px;
+  }
+
+  @include mobile {
+    padding-top: 20px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  &__logo {
+    width: fit-content;
+
+    &-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &-image {
+        display: block;
+        max-width: 100%;
+        width: 115px;
+        height: auto;
+
+        @include laptop {
+          width: 90px;
+        }
+
+        @include mobile {
+          width: 79px;
+        }
+      }
+    }
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__lang {
+    & .select-selected {
+      display: flex;
+      justify-content: center;
+      min-width: 84px;
+      padding: 21px 12px;
+      box-sizing: border-box;
+
+      @include mobile {
+        min-width: 75px;
+        padding: 14px 10px;
+      }
+    }
+
+    & .select-items {
+      left: 0;
+      display: flex;
+      flex-wrap: wrap;
+      width: 265px;
+      padding: 8px;
+      box-sizing: border-box;
+
+
+      @include mobile {
+        left: auto;
+        right: -54px;
+      }
+
+      & > .select-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 calc(100% / 3);
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  &__auth {
+    position: relative;
+
+    &::before {
+      @include mobile {
+        content: '';
+        display: block;
+        width: 42px;
+        height: 42px;
+        border-radius: 8px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 20px 40px -20px rgba(95, 15, 68, 0.45);
+        background: url(../assets/user.svg) center / 20px no-repeat, $buttonBg;
+      }
+    }
+
+    &::after {
+      @include mobile {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        opacity: 0;
+        pointer-events: none;
+        transition-property: opacity;
+        transition-timing-function: ease-out;
+        transition-duration: 0.2s;
+        will-change: opacity;
+      }
+    }
+
+    &.active::after {
+      @include mobile {
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      @include mobile {
+        position: absolute;
+        top: calc(100% + 8px);
+        right: 0;
+        z-index: 100;
+        width: max-content;
+        opacity: 0;
+        pointer-events: none;
+        transition-property: opacity;
+        transition-timing-function: ease-out;
+        transition-duration: 0.2s;
+        will-change: opacity;
+      }
+    }
+
+    &.active &-wrapper {
+      @include mobile {
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+
+    &-login,
+    &-singup {
+      display: inline-block;
+      flex: 0 0 auto;
+      padding: 21px 32px;
+      box-sizing: border-box;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 100%;
+      border: none;
+      border-radius: 16px;
+      outline: none;
+      transition-property: background-color, filter;
+      transition-timing-function: ease-out;
+      transition-duration: 0.2s;
+      will-change: background-color, filter;
+      cursor: pointer;
+    }
+
+    &-login {
+      color: #333;
+      backdrop-filter: blur(8px);
+      background: rgba(255, 255, 255, 0.7);
+
+      &:hover {
+        background: #fff;
+      }
+    }
+
+    &-singup {
+      color: #fff;
+      background: $buttonBg;
+
+      &:hover {
+        filter: brightness(120%);
+      }
+    }
+  }
 }

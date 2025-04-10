@@ -1,0 +1,105 @@
+.custom-select {
+  position: relative;
+  margin: 0;
+  border: none;
+
+  & select {
+    display: none;
+  }
+
+  & .select-selected {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    padding: 21px 24px;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: #333;
+    border: none;
+    border-radius: 16px;
+    outline: none;
+    backdrop-filter: blur(8px);
+    background: #fff;
+    user-select: none;
+    cursor: pointer;
+
+    & > span {
+      display: inline-block;
+      text-overflow: ellipsis;
+      border-radius: 32px;
+    }
+
+    &::after {
+      content: '';
+      flex: 0 0 auto;
+      display: block;
+      width: 12px;
+      aspect-ratio: 1 / 1;
+      background: url(../assets/dropdown.svg) center / 10px no-repeat;
+      transition: all ease-in-out 0.1s;
+    }
+
+    &.active::after {
+      transform: rotate(180deg);
+    }
+  }
+
+  & .select-hide {
+    display: none !important;
+  }
+
+  & .select-items {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    z-index: 99;
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.7);
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba($color: $white, $alpha: 0.2);
+      border-radius: 4px;
+    }
+
+    & .select-item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 10px 8px;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-size: 14px;
+      color: #333;
+      border-radius: 12px;
+      user-select: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgba($color: #ffffff, $alpha: 0.5);
+      }
+
+      &.same-as-selected {
+        background-color: #ffffff;
+      }
+    }
+  }
+
+  & .select-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 98;
+  }
+}
