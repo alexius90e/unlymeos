@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  overflow-y: scroll;
+  color: #181d42;
+  background-color: #ffffff;
+}
+
+a,
+button,
+input,
+textarea {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.intro {
+  margin: 63px 0 160px;
+}
+@media (max-width: 992px) {
+  .intro {
+    margin: 48px 0 80px;
+  }
+}
+@media (max-width: 576px) {
+  .intro {
+    margin: 40px 0 60px;
+  }
+}
+.intro__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 72px;
+}
+@media (max-width: 992px) {
+  .intro__logo {
+    margin: 0 0 48px;
+  }
+}
+@media (max-width: 576px) {
+  .intro__logo {
+    margin: 0 0 40px;
+  }
+}
+.intro__logo-image {
+  display: block;
+  max-width: 100%;
+  width: 312px;
+  height: auto;
+}
+@media (max-width: 576px) {
+  .intro__logo-image {
+    width: 230px;
+  }
+}
+.intro__title {
+  margin: 0 0 20px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 135%;
+  text-align: center;
+  color: #000;
+}
+@media (max-width: 992px) {
+  .intro__title {
+    margin-bottom: 16px;
+    font-size: 28px;
+  }
+}
+@media (max-width: 576px) {
+  .intro__title {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+}
+.intro__description {
+  margin: 0 0 38px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 125%;
+  text-align: center;
+  color: #f430dd;
+}
+@media (max-width: 992px) {
+  .intro__description {
+    margin-bottom: 30px;
+    font-size: 22px;
+  }
+}
+@media (max-width: 576px) {
+  .intro__description {
+    margin-bottom: 28px;
+    font-size: 14px;
+  }
+}
+.intro__singup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 32px;
+}
+@media (max-width: 992px) {
+  .intro__singup {
+    margin-bottom: 20px;
+  }
+}
+.intro__singup-button {
+  display: inline-block;
+  padding: 36px 44px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 125%;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, #e458d0 0%, #e458d0 10%, #e583d9 20%, #e63cb2 70%, #e52ea8 100%);
+  -webkit-transition-property: -webkit-box-shadow, -webkit-filter;
+  transition-property: -webkit-box-shadow, -webkit-filter;
+  transition-property: box-shadow, filter;
+  transition-property: box-shadow, filter, -webkit-box-shadow, -webkit-filter;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .intro__singup-button {
+    padding: 26px 40px;
+    font-size: 20px;
+  }
+}
+.intro__singup-button:hover {
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+.intro__singup-button b {
+  font-weight: 600;
+}
+.intro__disclaimer {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: center;
+  color: #808080;
+}
+@media (max-width: 992px) {
+  .intro__disclaimer {
+    font-size: 14px;
+  }
+}
