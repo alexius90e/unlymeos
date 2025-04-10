@@ -1,2 +1,90 @@
 .footer {
+  padding: 100px 0;
+
+  @include laptop {
+    padding: 64px 0;
+  }
+
+  @include mobile {
+    padding: 50px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 96px;
+
+    @include desktop {
+      gap: 48px;
+    }
+
+    @include laptop {
+      flex-direction: column;
+    }
+  }
+
+  &__info {
+    flex: 1 1 auto;
+
+    &-name,
+    &-address {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 150%;
+      color: #202020;
+
+      @include laptop {
+        text-align: center;
+      }
+    }
+
+    &-name {
+      font-weight: 600;
+    }
+
+    &-address {
+      font-weight: 400;
+    }
+  }
+
+  &__partners {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 0 0 auto;
+    gap: 28px;
+
+    &-logo {
+      display: block;
+      max-width: 100%;
+      height: 24px;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    @include laptop {
+      padding-top: 32px;
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 auto;
+
+      &-icon {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
 }
