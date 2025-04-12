@@ -451,9 +451,6 @@ img {
     margin: 40px 0 60px;
   }
 }
-.intro__wrapper {
-  background-color: #fdfdfe;
-}
 .intro__logo {
   display: -webkit-box;
   display: -ms-flexbox;
