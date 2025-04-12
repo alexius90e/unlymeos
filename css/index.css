@@ -1254,6 +1254,7 @@ img {
 }
 
 .integration {
+  position: relative;
   margin: 160px 0;
 }
 @media (max-width: 1024px) {
@@ -1265,6 +1266,23 @@ img {
   .integration {
     margin: 60px 0;
   }
+}
+.integration::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -2;
+  display: block;
+  width: 1400px;
+  aspect-ratio: 1/1;
+  background: url(../assets/ai-icon.png) center no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+  -webkit-transform: translate3d(-50%, 20%, 0);
+          transform: translate3d(-50%, 20%, 0);
+  -webkit-filter: blur(900px);
+          filter: blur(900px);
 }
 .integration__title {
   margin: 0 0 60px;
@@ -1421,7 +1439,7 @@ img {
   list-style-type: none;
 }
 .integration__agents-info-item-list-item {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 160%;
   color: #333;
@@ -1488,7 +1506,7 @@ img {
   }
 }
 .integration__advantages-item-text {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   color: #333;
@@ -1602,7 +1620,7 @@ img {
   }
 }
 .security__advantages-card-text {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   color: #333;
@@ -1632,7 +1650,7 @@ img {
 .security__singup-button {
   display: inline-block;
   padding: 36px 44px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 24px;
   line-height: 125%;
   color: #fff;
