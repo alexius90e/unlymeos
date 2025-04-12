@@ -24,6 +24,7 @@
     opacity: 0.1;
     transform: translate3d(-50%, 20%, 0);
     filter: blur(900px);
+    -webkit-backface-visibility: hidden;
   }
 
   &__title {
