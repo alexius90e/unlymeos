@@ -625,9 +625,9 @@ img {
   aspect-ratio: 1/1;
   border-radius: 500px;
   background-color: #6843c4;
-  opacity: 0.5;
-  -webkit-filter: blur(40px);
-          filter: blur(40px);
+  opacity: 0.2;
+  -webkit-filter: blur(900px);
+          filter: blur(900px);
   -webkit-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
 }
@@ -687,20 +687,24 @@ img {
   aspect-ratio: 1/1;
   border-radius: 500px;
   opacity: 0.2;
+  -webkit-filter: blur(900px);
+          filter: blur(900px);
 }
 .big-update__main::before {
-  top: 0;
-  right: 0;
+  top: 530px;
+  right: -120px;
   background-color: #ec28a8;
-  -webkit-transform: translate3d(12%, 53%, 0);
-          transform: translate3d(12%, 53%, 0);
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
 }
 .big-update__main::after {
   left: 0;
   bottom: 0;
+  left: -160px;
+  bottom: 1000px;
   background-color: #07f5cd;
-  -webkit-transform: translate3d(-16%, -100%, 0);
-          transform: translate3d(-16%, -100%, 0);
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
 }
 .big-update__main-card {
   display: -webkit-box;
