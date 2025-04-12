@@ -62,13 +62,15 @@
       aspect-ratio: 1 / 1;
       border-radius: 500px;
       filter: blur(900px);
+      -webkit-backface-visibility: hidden;
+
     }
 
     &::before {
       top: 0;
       right: 0;
       background-color: #07f5cd;
-      opacity: 0.15;
+      opacity: 0.915;
       transform: translate3d(36%, 20%, 0);
     }
 
@@ -76,7 +78,7 @@
       top: 0;
       left: 0;
       background-color: #6843c4;
-      opacity: 0.2;
+      opacity: 0.92;
       transform: translate3d(10%, 115%, 0);
     }
   }
