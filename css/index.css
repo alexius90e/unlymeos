@@ -617,15 +617,19 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+  top: 280px;
+  left: -300px;
   z-index: -2;
   display: block;
   width: 1000px;
   aspect-ratio: 1/1;
   border-radius: 500px;
   background-color: #6843c4;
-  opacity: 0.2;
-  -webkit-transform: translate3d(-30%, 28%, 0);
-          transform: translate3d(-30%, 28%, 0);
+  opacity: 0.5;
+  -webkit-filter: blur(40px);
+          filter: blur(40px);
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
 }
 .big-update__heading-title {
   margin: 0 0 24px;

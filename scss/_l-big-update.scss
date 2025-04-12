@@ -23,15 +23,19 @@
       position: absolute;
       top: 0;
       left: 0;
+      top: 280px;
+      left: -300px;
       z-index: -2;
       display: block;
       width: 1000px;
       aspect-ratio: 1 / 1;
       border-radius: 500px;
       background-color: #6843c4;
-      opacity: 0.2;
-      transform: translate3d(-30%, 28%, 0);
+      opacity: 0.5;
       // filter: blur(900px);
+      filter: blur(40px);
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: translate3d(0, 0, 0);
     }
 
     &-title {
