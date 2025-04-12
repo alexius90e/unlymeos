@@ -31,7 +31,7 @@
       background-color: #6843c4;
       opacity: 0.2;
       transform: translate3d(-30%, 28%, 0);
-      filter: blur(900px);
+      // filter: blur(900px);
     }
 
     &-title {
@@ -87,7 +87,7 @@
       aspect-ratio: 1 / 1;
       border-radius: 500px;
       opacity: 0.2;
-      filter: blur(900px);
+      // filter: blur(900px);
     }
 
     &::before {

@@ -626,8 +626,6 @@ img {
   opacity: 0.2;
   -webkit-transform: translate3d(-30%, 28%, 0);
           transform: translate3d(-30%, 28%, 0);
-  -webkit-filter: blur(900px);
-          filter: blur(900px);
 }
 .big-update__heading-title {
   margin: 0 0 24px;
@@ -685,8 +683,6 @@ img {
   aspect-ratio: 1/1;
   border-radius: 500px;
   opacity: 0.2;
-  -webkit-filter: blur(900px);
-          filter: blur(900px);
 }
 .big-update__main::before {
   top: 0;
