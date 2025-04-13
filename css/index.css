@@ -992,6 +992,7 @@ img {
   aspect-ratio: 1/1;
   border-radius: 500px;
   background-color: #ec28a8;
+  opacity: 0.15;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-transform: translate3d(-38%, -20%, 0);
@@ -1025,6 +1026,7 @@ img {
   top: 0;
   right: 0;
   background-color: #07f5cd;
+  opacity: 0.15;
   -webkit-transform: translate3d(36%, 20%, 0);
           transform: translate3d(36%, 20%, 0);
 }
@@ -1032,6 +1034,7 @@ img {
   top: 0;
   left: 0;
   background-color: #6843c4;
+  opacity: 0.2;
   -webkit-transform: translate3d(10%, 115%, 0);
           transform: translate3d(10%, 115%, 0);
 }
@@ -1283,6 +1286,7 @@ img {
   aspect-ratio: 1/1;
   background: url(../assets/ai-icon.png) center no-repeat;
   background-size: cover;
+  opacity: 0.1;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-transform: translate3d(-50%, 20%, 0);
