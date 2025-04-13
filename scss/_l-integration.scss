@@ -21,10 +21,10 @@
     aspect-ratio: 1 / 1;
     background: url(../assets/ai-icon.png) center no-repeat;
     background-size: cover;
-    opacity: 0.1;
+    // opacity: 0.1;
+    backface-visibility: hidden;
     transform: translate3d(-50%, 20%, 0);
     filter: blur(900px);
-    -webkit-backface-visibility: hidden;
   }
 
   &__title {
