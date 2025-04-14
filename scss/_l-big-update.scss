@@ -42,7 +42,7 @@
       left: -300px;
       width: 2800px;
       aspect-ratio: 1 / 1;
-      background: url(../assets/ellipse-violet.webp) center / cover no-repeat;
+      background: url(../assets/ellipse-violet.png) center / cover no-repeat;
       transform: translate3d(-50%, -50%, 0);
     }
 
@@ -101,14 +101,14 @@
     &::before {
       top: 530px;
       right: -120px;
-      background: url(../assets/ellipse-red.webp) center / cover no-repeat;
+      background: url(../assets/ellipse-red.png) center / cover no-repeat;
       transform: translate3d(50%, -50%, 0);
     }
 
     &::after {
       left: -160px;
       bottom: 1000px;
-      background: url(../assets/ellipse-green.webp) center / cover no-repeat;
+      background: url(../assets/ellipse-green.png) center / cover no-repeat;
       transform: translate3d(-50%, 50%, 0);
     }
 

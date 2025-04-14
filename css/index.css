@@ -619,7 +619,7 @@ img {
   left: -300px;
   width: 2800px;
   aspect-ratio: 1/1;
-  background: url(../assets/ellipse-violet.webp) center/cover no-repeat;
+  background: url(../assets/ellipse-violet.png) center/cover no-repeat;
   -webkit-transform: translate3d(-50%, -50%, 0);
           transform: translate3d(-50%, -50%, 0);
 }
@@ -680,14 +680,14 @@ img {
 .big-update__main::before {
   top: 530px;
   right: -120px;
-  background: url(../assets/ellipse-red.webp) center/cover no-repeat;
+  background: url(../assets/ellipse-red.png) center/cover no-repeat;
   -webkit-transform: translate3d(50%, -50%, 0);
           transform: translate3d(50%, -50%, 0);
 }
 .big-update__main::after {
   left: -160px;
   bottom: 1000px;
-  background: url(../assets/ellipse-green.webp) center/cover no-repeat;
+  background: url(../assets/ellipse-green.png) center/cover no-repeat;
   -webkit-transform: translate3d(-50%, 50%, 0);
           transform: translate3d(-50%, 50%, 0);
 }
@@ -974,7 +974,7 @@ img {
   z-index: -2;
   width: 2800px;
   aspect-ratio: 1/1;
-  background: url(../assets/ellipse-red.webp) center/cover no-repeat;
+  background: url(../assets/ellipse-red.png) center/cover no-repeat;
   -webkit-transform: translate3d(-50%, -50%, 0);
           transform: translate3d(-50%, -50%, 0);
 }
@@ -995,7 +995,7 @@ img {
   z-index: -2;
   width: 2800px;
   aspect-ratio: 1/1;
-  background: url(../assets/ellipse-green.webp) center/cover no-repeat;
+  background: url(../assets/ellipse-green.png) center/cover no-repeat;
   -webkit-transform: translate3d(50%, -50%, 0);
           transform: translate3d(50%, -50%, 0);
 }
@@ -1007,7 +1007,7 @@ img {
   z-index: -2;
   width: 2800px;
   aspect-ratio: 1/1;
-  background: url(../assets/ellipse-violet.webp) center/cover no-repeat;
+  background: url(../assets/ellipse-violet.png) center/cover no-repeat;
   -webkit-transform: translate3d(-25%, -50%, 0);
           transform: translate3d(-25%, -50%, 0);
 }
@@ -1256,7 +1256,7 @@ img {
   z-index: -2;
   width: 2800px;
   aspect-ratio: 1/1;
-  background: url(../assets/ellipse-red-2.webp) center/cover no-repeat;
+  background: url(../assets/ellipse-red-2.png) center/cover no-repeat;
   -webkit-transform: translate3d(-50%, -25%, 0);
           transform: translate3d(-50%, -25%, 0);
 }
