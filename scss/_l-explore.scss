@@ -29,30 +29,20 @@
     }
 
     &::before {
-      // content: '';
-      // position: absolute;
-      // top: 0;
-      // left: 0;
-      // z-index: -2;
-      // display: block;
-      // width: 1000px;
-      // aspect-ratio: 1 / 1;
-      // border-radius: 500px;
-      // background-color: #ec28a8;
-      // opacity: 0.15;
-      // backface-visibility: hidden;
-      // transform: translate3d(-38%, -20%, 0);
-      // filter: blur(900px);
-
       content: '';
       position: absolute;
-      top: -199px;
-      left: -376px;
+      top: 0;
+      left: 0;
       z-index: -2;
-      width: 2800px;
+      display: block;
+      width: 1000px;
       aspect-ratio: 1 / 1;
-      background: url(../assets/ellipse-red.png) center / cover no-repeat;
-      transform: translate3d(-50%, -50%, 0);
+      border-radius: 500px;
+      background-color: #ec28a8;
+      opacity: 0.15;
+      backface-visibility: hidden;
+      transform: translate3d(-38%, -20%, 0);
+      filter: blur(900px);
     }
   }
 
@@ -64,51 +54,31 @@
 
     &::before,
     &::after {
-      // content: '';
-      // position: absolute;
-      // z-index: -2;
-      // display: block;
-      // width: 1000px;
-      // aspect-ratio: 1 / 1;
-      // border-radius: 500px;
-      // backface-visibility: hidden;
-      // filter: blur(900px);
+      content: '';
+      position: absolute;
+      z-index: -2;
+      display: block;
+      width: 1000px;
+      aspect-ratio: 1 / 1;
+      border-radius: 500px;
+      backface-visibility: hidden;
+      filter: blur(900px);
     }
 
     &::before {
-      // top: 0;
-      // right: 0;
-      // background-color: #07f5cd;
-      // opacity: 0.15;
-      // transform: translate3d(36%, 20%, 0);
-
-      content: '';
-      position: absolute;
-      top: 208px;
-      right: -365px;
-      z-index: -2;
-      width: 2800px;
-      aspect-ratio: 1 / 1;
-      background: url(../assets/ellipse-green.png) center / cover no-repeat;
-      transform: translate3d(50%, -50%, 0);
+      top: 0;
+      right: 0;
+      background-color: #07f5cd;
+      opacity: 0.15;
+      transform: translate3d(36%, 20%, 0);
     }
 
     &::after {
-      // top: 0;
-      // left: 0;
-      // background-color: #6843c4;
-      // opacity: 0.2;
-      // transform: translate3d(10%, 115%, 0);
-
-      content: '';
-      position: absolute;
-      left: -105px;
-      bottom: -976px;
-      z-index: -2;
-      width: 2800px;
-      aspect-ratio: 1 / 1;
-      background: url(../assets/ellipse-violet.png) center / cover no-repeat;
-      transform: translate3d(-25%, -50%, 0);
+      top: 0;
+      left: 0;
+      background-color: #6843c4;
+      opacity: 0.2;
+      transform: translate3d(10%, 115%, 0);
     }
   }
 

@@ -11,35 +11,20 @@
   }
 
   &::before {
-    // content: '';
-    // position: absolute;
-    // top: 0;
-    // left: 50%;
-    // z-index: -2;
-    // display: block;
-    // width: 1400px;
-    // aspect-ratio: 1 / 1;
-    // background: url(../assets/ai-icon.png) center no-repeat;
-    // background-size: cover;
-    // opacity: 0.1;
-    // backface-visibility: hidden;
-    // transform: translate3d(-50%, 20%, 0);
-    // filter: blur(900px);
-
     content: '';
-      position: absolute;
-      top: 244px;
-      left: 50%;
-      z-index: -2;
-      width: 2800px;
-      aspect-ratio: 1 / 1;
-      background: url(../assets/ellipse-red-2.png) center / cover no-repeat;
-      transform: translate3d(-50%, -25%, 0);
-
-      // background: radial-gradient(
-      //   rgba($color: #ec28a8, $alpha: 1),
-      //   rgba($color: #ec28a8, $alpha: 0)
-      // );
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: -2;
+    display: block;
+    width: 1400px;
+    aspect-ratio: 1 / 1;
+    background: url(../assets/ai-icon.png) center no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+    backface-visibility: hidden;
+    transform: translate3d(-50%, 20%, 0);
+    filter: blur(900px);
   }
 
   &__title {

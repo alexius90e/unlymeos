@@ -615,13 +615,21 @@ img {
 .big-update__heading::before {
   content: "";
   position: absolute;
+  top: 0;
+  left: 0;
   top: 280px;
   left: -300px;
-  width: 2800px;
+  z-index: -2;
+  display: block;
+  width: 1000px;
   aspect-ratio: 1/1;
-  background: url(../assets/ellipse-violet.png) center/cover no-repeat;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);
+  border-radius: 500px;
+  background-color: #6843c4;
+  opacity: 0.2;
+  -webkit-filter: blur(900px);
+          filter: blur(900px);
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
 }
 .big-update__heading-title {
   margin: 0 0 24px;
@@ -674,22 +682,29 @@ img {
   content: "";
   position: absolute;
   z-index: -2;
-  width: 2800px;
+  display: block;
+  width: 1000px;
   aspect-ratio: 1/1;
+  border-radius: 500px;
+  opacity: 0.2;
+  -webkit-filter: blur(900px);
+          filter: blur(900px);
 }
 .big-update__main::before {
   top: 530px;
   right: -120px;
-  background: url(../assets/ellipse-red.png) center/cover no-repeat;
-  -webkit-transform: translate3d(50%, -50%, 0);
-          transform: translate3d(50%, -50%, 0);
+  background-color: #ec28a8;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
 }
 .big-update__main::after {
+  left: 0;
+  bottom: 0;
   left: -160px;
   bottom: 1000px;
-  background: url(../assets/ellipse-green.png) center/cover no-repeat;
-  -webkit-transform: translate3d(-50%, 50%, 0);
-          transform: translate3d(-50%, 50%, 0);
+  background-color: #07f5cd;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
 }
 .big-update__main-card {
   display: -webkit-box;
@@ -969,14 +984,21 @@ img {
 .explore__title::before {
   content: "";
   position: absolute;
-  top: -199px;
-  left: -376px;
+  top: 0;
+  left: 0;
   z-index: -2;
-  width: 2800px;
+  display: block;
+  width: 1000px;
   aspect-ratio: 1/1;
-  background: url(../assets/ellipse-red.png) center/cover no-repeat;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);
+  border-radius: 500px;
+  background-color: #ec28a8;
+  opacity: 0.15;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translate3d(-38%, -20%, 0);
+          transform: translate3d(-38%, -20%, 0);
+  -webkit-filter: blur(900px);
+          filter: blur(900px);
 }
 .explore__wrapper {
   position: relative;
@@ -987,29 +1009,34 @@ img {
       flex-wrap: wrap;
   gap: 12px;
 }
-.explore__wrapper::before {
+.explore__wrapper::before, .explore__wrapper::after {
   content: "";
   position: absolute;
-  top: 208px;
-  right: -365px;
   z-index: -2;
-  width: 2800px;
+  display: block;
+  width: 1000px;
   aspect-ratio: 1/1;
-  background: url(../assets/ellipse-green.png) center/cover no-repeat;
-  -webkit-transform: translate3d(50%, -50%, 0);
-          transform: translate3d(50%, -50%, 0);
+  border-radius: 500px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-filter: blur(900px);
+          filter: blur(900px);
+}
+.explore__wrapper::before {
+  top: 0;
+  right: 0;
+  background-color: #07f5cd;
+  opacity: 0.15;
+  -webkit-transform: translate3d(36%, 20%, 0);
+          transform: translate3d(36%, 20%, 0);
 }
 .explore__wrapper::after {
-  content: "";
-  position: absolute;
-  left: -105px;
-  bottom: -976px;
-  z-index: -2;
-  width: 2800px;
-  aspect-ratio: 1/1;
-  background: url(../assets/ellipse-violet.png) center/cover no-repeat;
-  -webkit-transform: translate3d(-25%, -50%, 0);
-          transform: translate3d(-25%, -50%, 0);
+  top: 0;
+  left: 0;
+  background-color: #6843c4;
+  opacity: 0.2;
+  -webkit-transform: translate3d(10%, 115%, 0);
+          transform: translate3d(10%, 115%, 0);
 }
 .explore__card {
   display: -webkit-box;
@@ -1251,14 +1278,21 @@ img {
 .integration::before {
   content: "";
   position: absolute;
-  top: 244px;
+  top: 0;
   left: 50%;
   z-index: -2;
-  width: 2800px;
+  display: block;
+  width: 1400px;
   aspect-ratio: 1/1;
-  background: url(../assets/ellipse-red-2.png) center/cover no-repeat;
-  -webkit-transform: translate3d(-50%, -25%, 0);
-          transform: translate3d(-50%, -25%, 0);
+  background: url(../assets/ai-icon.png) center no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translate3d(-50%, 20%, 0);
+          transform: translate3d(-50%, 20%, 0);
+  -webkit-filter: blur(900px);
+          filter: blur(900px);
 }
 .integration__title {
   margin: 0 0 60px;
