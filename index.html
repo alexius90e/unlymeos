@@ -51,7 +51,9 @@
 
     <main class="main">
       <section class="first-screen">
-        <div class="container"></div>
+        <video class="first-screen__video" autoplay muted loop playsinline style="user-select: none">
+          <source src="./assets/UnlymeOS.mp4" type="video/mp4" />
+        </video>
       </section>
 
       <section class="intro">
@@ -85,13 +87,21 @@
           <div class="big-update__main">
             <div class="big-update__main-card big-update__main-card_lg">
               <h3 class="big-update__main-card-title">Dashboard</h3>
+
               <div class="big-update__main-card-text">
                 The Unlyme OS dashboard is implemented in such a way that you see everything that is
                 happening in your business on one screen. Each application has its own functional
                 widget. Besides viewing information, you can also perform quick operations or
                 navigate to an app. Group the widgets as you like
               </div>
-              <div class="big-update__main-card-media"></div>
+
+              <div class="big-update__main-card-media">
+                <img
+                  class="big-update__main-card-media-image"
+                  src="./assets/update-media-bg.webp"
+                  alt="media"
+                />
+              </div>
             </div>
 
             <div class="big-update__main-card">
@@ -131,12 +141,20 @@
 
             <div class="big-update__main-card big-update__main-card_lg">
               <h3 class="big-update__main-card-title">Split view</h3>
+
               <div class="big-update__main-card-text">
                 Use two applications at the same time. Open the main app and the secondary app on
                 the right: team chat, mail, notes. Or check notifications and settings without
                 closing the main app
               </div>
-              <div class="big-update__main-card-media"></div>
+
+              <div class="big-update__main-card-media">
+                <img
+                  class="big-update__main-card-media-image"
+                  src="./assets/update-media-bg.webp"
+                  alt="media"
+                />
+              </div>
             </div>
 
             <div class="big-update__main-card">
@@ -178,6 +196,17 @@
                 </div>
               </div>
             </div>
+          </div>
+
+          <div class="big-update__security">
+            <img
+              class="big-update__security-icon"
+              src="./assets/switzerland-flag.svg"
+              alt="switzerland"
+            />
+            <span class="big-update__security-text">
+              Your data is securely stored in Switzerland.
+            </span>
           </div>
 
           <div class="big-update__security">
