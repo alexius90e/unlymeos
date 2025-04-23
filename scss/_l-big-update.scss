@@ -97,7 +97,6 @@
       top: 530px;
       right: -120px;
       background-color: #ec28a8;
-      // transform: translate3d(12%, 53%, 0);
       -webkit-backface-visibility: hidden;
       -webkit-transform: translate3d(0, 0, 0);
     }
@@ -108,7 +107,6 @@
       left: -160px;
       bottom: 1000px;
       background-color: #07f5cd;
-      // transform: translate3d(-16%, -100%, 0);
       -webkit-backface-visibility: hidden;
       -webkit-transform: translate3d(0, 0, 0);
     }
@@ -189,58 +187,8 @@
       &-media {
         display: block;
         width: 100%;
-        aspect-ratio: 673 / 431;
         overflow: hidden;
         border-radius: 20px;
-        background: url(../assets/update-media-bg.webp) center / cover no-repeat;
-
-        @include laptop {
-          aspect-ratio: 334 / 220;
-        }
-
-        &-figure {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 100%;
-          height: 100%;
-          margin: 0;
-          padding: 56px;
-          box-sizing: border-box;
-
-          @include laptop {
-            padding: 36px;
-          }
-
-          @include mobile {
-            padding: 20px;
-          }
-
-          &_left,
-          &_right {
-            align-items: flex-end;
-            padding: 0;
-          }
-
-          &_left {
-            justify-content: flex-start;
-          }
-
-          &_right {
-            justify-content: flex-end;
-          }
-
-          &-image {
-            display: block;
-            max-height: 100%;
-            max-width: 100%;
-          }
-        }
-      }
-
-      &_lg &-media {
-        aspect-ratio: auto;
-        background: rgba($color: #ffffff, $alpha: 0);
 
         &-image {
           display: block;
